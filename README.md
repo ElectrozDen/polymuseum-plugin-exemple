@@ -1,0 +1,1 @@
+# polymuseum-plugin-exemple
