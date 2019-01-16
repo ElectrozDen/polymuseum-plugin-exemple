@@ -37,7 +37,7 @@ Here the interface of an activity
 ```
 name: string
 description: string
-keywords: Array[string // categories
+keywords: Array[string] // categories
 location: string
 participants: Array[string]
 max_participants: integer
@@ -49,7 +49,7 @@ items: Json Object // A small database for the activity if you need to store mor
 difficulty: integer //1,2,3
 ```
 
-A SDK is fournissed in the project to manage activities with the system.
+A SDK is provided in the project to manage activities with the system.
 
 ## How to build
 
