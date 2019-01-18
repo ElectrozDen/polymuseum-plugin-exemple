@@ -32,6 +32,9 @@ Our system works around activities. They are the main exchange between the syste
 
 The administration must can create activities from your plugin and visitors must play theses activities from your plugin.
 
+![](https://i.ibb.co/QvMXfPw/plugin-sdk-activity.png)
+![](https://i.ibb.co/DLsCd0L/plugin-archi.png)
+
 Here the interface of an activity
 
 ```
