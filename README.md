@@ -50,13 +50,14 @@ schedule: string
 points: integer
 items: Json Object // A small database for the activity if you need to store more informations.
 difficulty: integer //1,2,3
+color: string // define the color of your activity in hexa
 ```
 
 A SDK is provided in the project to manage activities with the system.
 
 ## How to build
 
-Juste run `npm run build`
+Just run `npm run build`
 
 The files builds are available in the folder dist.
 
