@@ -5,8 +5,8 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: "./index.html"
 });
 
-const mode = process.env.WEBPACK_MODE;
-module.exports = {
+
+module.exports = (env, options) => { console.log(options.mode); return {
     entry: {
         admin: path.join(__dirname, "public/index_admin.js"),
         visitor: path.join(__dirname, "public/index_visitor.js")
@@ -25,13 +25,13 @@ module.exports = {
         ]
     },
     plugins: [new HtmlWebpackPlugin({
-        inject: mode === 'production'? false : true,
+        inject: options.mode !== 'production',
         chunks: ['admin'],
         template: path.join(__dirname, "public/index_admin.html"),
         filename: 'index_admin.html'
       }),
       new HtmlWebpackPlugin({
-        inject: mode === 'production'? false : true,
+        inject: options.mode !== 'production',
         chunks: ['visitor'],
         template: path.join(__dirname, "public/index_visitor.html"),
         filename: 'index_visitor.html'
@@ -42,4 +42,4 @@ module.exports = {
     devServer: {
         port: 3001
     }
-};
+}};
