@@ -1,4 +1,4 @@
-# polymuseum-plugin-exemple
+# polymuseum-plugin-example
 
 ## How to create
 
